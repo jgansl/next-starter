@@ -1,0 +1,16 @@
+@import './abstract/_index';
+@import './base/_index';
+@import './components/_index';
+
+.hs-dropdown-menu {
+   position: absolute;
+   display: block!important;
+   pointer-events: none;
+   transition: opacity 450ms !important;
+}
+
+[type=button]:hover + .hs-dropdown-menu {
+   display: block;
+   opacity: 1!important;
+   pointer-events: initial;
+}
